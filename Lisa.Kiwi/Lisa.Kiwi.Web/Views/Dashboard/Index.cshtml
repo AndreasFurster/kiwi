@@ -24,10 +24,10 @@
 	<ul class="side-buttons">
 		@if (Request.Cookies["role"] != null && Request.Cookies["role"].Value == "Administrator")
 		{
-			<li><a href="@Url.Action("Archive")">Archief</a></li>
-			<li><a href="@Url.Action("Index", "Account")">Wachtwoorden wijzigen</a></li>
+			<a href="@Url.Action("Archive")"><li>Archief</li></a>
+			<a href="@Url.Action("Index", "Account")"><li>Wachtwoorden wijzigen</li></a>
 		}
-		<li><a href="@Url.Action("Logout", "Account")">Uitloggen</a></li>
+		<a href="@Url.Action("Logout", "Account")"><li>Uitloggen</li></a>
 	</ul>
 	<div id="container"></div>
 
